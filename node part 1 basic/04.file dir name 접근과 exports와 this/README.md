@@ -28,3 +28,23 @@ exports.even = even;
 // 둘중하나 선택하여 사용해야함
 ```
 
+
+# this
+```
+node 의 this 는 다름
+
+//<node.js>
+console.log('전역 this > :',this === module.exports);
+
+
+function a() {
+    console.log('function a this > :' , this);
+    console.log('function a this > :' , this === global);
+}
+
+a();
+
+
+// <repl>
+node this.js
+```
